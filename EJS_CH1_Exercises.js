@@ -10,7 +10,7 @@ for (var i = 0; i < iterations; i++) {
 // ------------------------Good old FizzBuzz----------------
 for (var i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz")
+    console.log("FizzBuzz");
   }
   else if (i % 5 === 0) {
     console.log("Buzz");
@@ -29,7 +29,7 @@ var chessBoard = "";
 
 for (var y = 0; y < setSize; y++) {
   for (var x = 0; x < setSize; x++) {
-    if ((x + y) % 2 == 0)
+    if ((x + y) % 2 === 0)
       chessBoard += " ";
     else
       chessBoard += "#";
