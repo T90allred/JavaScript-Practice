@@ -23,3 +23,13 @@ items.splice(0,1,"First");
 for (var i = 0; i < items.length; i++) {
   console.log(items[i]);
 }
+
+document.getElementById("magicButton").onclick = function () {
+  var spell = document.getElementById("spell").value;
+  var correctSpell = "crusio";
+  if (spell == correctSpell) {
+    alert("You just performed an illegal curse!");
+  }else{
+    alert("FLOP!");
+  }
+};
