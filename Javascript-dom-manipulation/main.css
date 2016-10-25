@@ -1,0 +1,29 @@
+h1{
+  color: green;
+}
+.circle{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+#redCircle{
+  background-color: red;
+
+}
+
+#blueCircle{
+  background-color: blue;
+
+}
+
+#yellowCircle{
+  background-color: yellow;
+
+}
+.clearBoth{
+  clear: both;
+}
+.text-input{
+  margin-top: 30px;
+}
