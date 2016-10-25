@@ -14,7 +14,6 @@ document.getElementById("test-button").onclick = function () {
   document.getElementById("test-text").innerHTML = inputText;
 };
 
-
 var items = ["Paint Ball Gun", "Shoes", "Laptop", "other"];
 items.push("Fire");
 items.splice(3,1);

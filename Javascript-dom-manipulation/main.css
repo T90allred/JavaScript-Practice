@@ -1,6 +1,4 @@
-h1{
-  color: green;
-}
+
 .circle{
   border-radius: 50%;
   width: 300px;
@@ -9,17 +7,14 @@ h1{
 }
 #redCircle{
   background-color: red;
-
 }
 
 #blueCircle{
   background-color: blue;
-
 }
 
 #yellowCircle{
   background-color: yellow;
-
 }
 .clearBoth{
   clear: both;
