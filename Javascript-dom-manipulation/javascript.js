@@ -33,3 +33,17 @@ document.getElementById("magicButton").onclick = function () {
     alert("FLOP!");
   }
 };
+
+document.getElementById("guessButton").onclick = function () {
+  var guess = Number(document.getElementById("guess").value);
+  var answer = Math.floor(Math.random() *5 ) +1;
+  if (guess == answer) {
+    console.log(guess);
+    console.log(answer);
+    alert("Nailed it!");
+  }else{
+    console.log(guess);
+    console.log(answer);
+    alert("Try again!");
+  }
+};
