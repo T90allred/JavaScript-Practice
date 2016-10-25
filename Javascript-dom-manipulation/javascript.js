@@ -28,22 +28,27 @@ document.getElementById("magicButton").onclick = function () {
   var spell = document.getElementById("spell").value;
   var correctSpell = "crusio";
   if (spell == correctSpell) {
-    alert("You just performed an illegal curse!");
+    alert("That is correct, you are a true Harry Potter fan!");
   }else{
-    alert("FLOP!");
+    alert("WRONG! You need to watch more Harry Potter!");
   }
 };
 
+var answer = Math.floor(Math.random() *5 ) +1;
+
 document.getElementById("guessButton").onclick = function () {
   var guess = Number(document.getElementById("guess").value);
-  var answer = Math.floor(Math.random() *5 ) +1;
   if (guess == answer) {
     console.log(guess);
     console.log(answer);
-    alert("Nailed it!");
+    alert("Nailed it! The answer was " + answer);
   }else{
     console.log(guess);
     console.log(answer);
-    alert("Try again!");
+    if (guess < answer) {
+      alert("Try guessing higher");
+    }else if (guess > answer) {
+      alert("Try guessing lower");
+    }
   }
 };
