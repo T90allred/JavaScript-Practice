@@ -1,9 +1,11 @@
 document.getElementById("redCircle").onclick = function () {
   document.getElementById("redCircle").style.display = "none";
 };
+
 document.getElementById("blueCircle").onclick = function () {
   document.getElementById("blueCircle").style.display = "none";
 };
+
 document.getElementById("yellowCircle").onclick = function () {
   document.getElementById("yellowCircle").style.display = "none";
 };
@@ -34,9 +36,10 @@ document.getElementById("magicButton").onclick = function () {
   }
 };
 
-var answer = Math.floor(Math.random() *5 ) +1;
+var answer = Math.floor(Math.random() *11 ) +1;
 
 document.getElementById("guessButton").onclick = function () {
+  console.log(answer);
   var guess = Number(document.getElementById("guess").value);
   if (guess == answer) {
     console.log(guess);
