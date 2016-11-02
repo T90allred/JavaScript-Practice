@@ -39,7 +39,6 @@ document.getElementById("magicButton").onclick = function () {
 var answer = Math.floor(Math.random() *11 ) +1;
 
 document.getElementById("guessButton").onclick = function () {
-  console.log(answer);
   var guess = Number(document.getElementById("guess").value);
   if (guess == answer) {
     console.log(guess);
