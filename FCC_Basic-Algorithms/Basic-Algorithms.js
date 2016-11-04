@@ -20,3 +20,24 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+//-------------------------------------------------- Check for Palindromes --------------------------------------------------
+
+function palindrome(str) {
+
+ var notValid = /[^A-Za-z0-9]/g;
+
+ str = str.toLowerCase().replace(notValid, '');
+
+ var length = str.length;
+
+ for (var i = 0; i < length/2; i++) {
+
+   if (str[i] !== str[length - 1 - i]) {
+       return false;
+   }
+
+ }
+ return true;
+}
+palindrome("eye");
