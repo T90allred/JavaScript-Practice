@@ -1,2 +1,2 @@
 # JavaScript-Practice
-Collection of practice problems with javascript
+Practice problems with javascript
