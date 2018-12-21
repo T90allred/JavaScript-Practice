@@ -1,84 +1,95 @@
-// var firstName = "Derek";
-// console.log(firstName);
+let friend = {
+  name: 'Derek',
+  age: 28,
+  married: true,
+  likes: [
+    'futsal',
+    'coding',
+    'his wife'
+  ]
+}
+
+console.log('Linked!')
+console.table({ a: 1, b: 2 })
+console.table(friend)
+console.error('Mainframe error!')
+console.warn('Just an warning, continue')
+console.time('Time')
 //
-// var lastName = "Allred";
-// console.log(lastName);
+console.log('taking up time to show the console.time() usage')
+console.log('taking up time to show the console.time() usage')
+console.log('taking up time to show the console.time() usage')
+console.log('taking up time to show the console.time() usage')
+console.log('taking up time to show the console.time() usage')
+console.log('taking up time to show the console.time() usage')
 //
-// var age = 26;
-// console.log(age);
+console.timeEnd('Time') //output = Time: 0.8549...ms
 
-var name = "Derek ";
-var age = 26;
-
-console.log(name + age);
-console.log(age);
-
-var job, isMarried;
-job = "Software Engineer";
-isMarried = true;
-
-console.log(job, isMarried);
-
-var job = prompt("What is your job?");
-
-
-
-switch (job){
-  case "Teacher":
-  console.log("He teaches kids");
-  break;
-  case "Driver":
-  console.log("He drives people");
-  break;
-  case "Cop":
-  console.log("He fights crime");
-  break;
-  default:
-  console.log("Other");
+const obj2 = {
+  name: 'Test',
+  make: 'subara'
 }
 
+obj2.year = 1965;
+console.log(obj2) //works fine
+
+//obj2 = 'string'; //Throws an error
+
+// Primitive Data Types: 
+//stored directly in the location the variable accesses, 
+//stored on the stack
+/*
+String
+Number
+Boolean
+Null
+Undefined
+Symbols
+*/
+// Reference Data Types: 
+//Accesed by reference, 
+//Objects that are stored on the heap, 
+//a pointer to a location in memory
+/*
+Arrays
+Object Literals
+Functions
+Dates
+Anything Else...
+*/
+
+// TYPE CONVERSION
+let value;
+//number to string
+// String()
+value = String(45)// '45', length = 2
+value = String(4 + 4) // 8, length = 1
+value = String(true) //'true', length = 4
+value = String(new Date()) // 'Thu Dec 20 2018 10:24:50 GMT-0700 (Mountain Standard Time)', length = 58
+// .toString()
+value = (65).toString()
+value = (true).toString()
 
 
-//Game
+//string to number
+value = Number('45')//45, 45.00
+value = Number(true)//1, 1.00
+value = Number(false)//0, 0.00
+value = Number(null)// 0, 0.00
+value = Number('test')//Nan
+value = Number([1, 2, 3])//Nan
+value = Number({ a: 1, b: 2 })//Nan
 
-var friend1Height = 60;
-var friend1Age = 24;
-var friend2Height = 68;
-var friend2Age = 23;
+value = parseInt(1.3)//1, 1.00 because we used parseInt it drops the decimal value
+value = parseFloat(1.3)//1.3, 1.30 because we used parseFloat it keeps the decimal value
 
 
-var scoreFriend1 = friend1Height + (friend1Age * 5);
+console.log(value)
+console.log(value.toFixed(2))
 
-var scoreFriend2 = friend2Height + (friend2Age * 5);
-console.log(scoreFriend1,scoreFriend2);
-if (scoreFriend1 > scoreFriend2) {
-  console.log("Friend 1 is the winner");
-}
-else if (scoreFriend1 < scoreFriend2) {
-  console.log("Friend 2 is the winner");
-}
-else {
-  console.log("It is a tie!");
-}
-
-var names = ["Derek", "Sam", "Rae", "Carter"];
-var ages = new Array(26,21,0);
-
-console.log(names);
-console.log(ages);
-console.log(names.length);
-console.log(names.indexOf("Sam"));
-
-var Derek = {
-  name: "Derek",
-  lastName: "Allred",
-  yearOfBirth: 1990,
-  job: "Software Engineer",
-  isMarried: true,
-  family: ["Sam","Karen","Jeff","Brandon","Ashley","Acelynn","Everly","Alyssa","Danny","Caden","Kaylee"],
-  calculateAge: function( ) {
-    this.age = 2016 - this.yearOfBirth;
-  }
-};
-Derek.calculateAge();
-console.log(Derek);
+// TYPE Coercion
+const val1 = '1';
+const val2 = 2;
+const sum = val1 + val2
+console.log(sum)// outputs: 12 because it concatinates the 1 and 2 to make '12'
+console.log(typeof sum)//string
