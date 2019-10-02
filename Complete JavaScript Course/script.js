@@ -22,8 +22,6 @@ console.log('taking up time to show the console.time() usage')
 console.log('taking up time to show the console.time() usage')
 console.log('taking up time to show the console.time() usage')
 console.log('taking up time to show the console.time() usage')
-console.log('taking up time to show the console.time() usage')
-console.log('taking up time to show the console.time() usage')
 //
 console.timeEnd('Time') //output = Time: 0.8549...ms
 
